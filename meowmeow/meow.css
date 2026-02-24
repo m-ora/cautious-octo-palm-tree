@@ -145,7 +145,6 @@
 .card-body a, img{
   border-radius: 5px;
   border-color:#3f3f3f !important;
-  background: #ffffff75!important;
   color: #3f3f3f !important;
 }
 
@@ -399,5 +398,6 @@ body {
     inset 0 0 20px 1px rgba(255, 255, 255, 1);
     position: relative;
 }
+
 
 
