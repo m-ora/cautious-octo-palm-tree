@@ -285,18 +285,13 @@ img.friend-avatar {
   height: var(--friend-avatar-size);
   object-fit: cover;
 
-  clip-path: polygon(
-    50% 90%,
-    10% 55%,
-    5% 35%,
-    20% 20%,
-    35% 20%,
-    50% 35%,
-    65% 20%,
-    80% 20%,
-    95% 35%,
-    90% 55%
-  );
+  clip-path: 
+    shape(
+      from 50% 91%,
+      line to 90% 50%,
+      arc to 50% 9%  of 1%,
+      arc to 10% 50% of 1%
+    );
 
   border: 1px solid var(--vs-border-lighter);
   transition: transform .3s ease, filter .3s ease;
@@ -487,4 +482,5 @@ body {
     inset 0 0 20px 1px rgba(255, 255, 255, 1);
     position: relative;
 }
+
 
