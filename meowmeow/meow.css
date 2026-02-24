@@ -364,15 +364,33 @@ body {
 
 
 .header-nav-bar{
-   border-radius: 15px;
-   background: rgb(129 137 188 / 52%);
-    box-shadow: inset 0 0 1px 1px rgb(129 137 188 / 0%);
+  padding:3px;
+  color:black!important;
+  font-weight:900;
+  border-radius: 15px 15px 0px 0px!important;
+  background: rgb(129 137 188 / 52%);
+  box-shadow: inset 0 0 1px 1px rgb(129 137 188 / 0%);
+}
+
+.header-nav {
+  font-weight:1100;
+  display:flex!important;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav-bar-secondary{
+      display:flex!important;
+  justify-content: center;
+  align-items: center;
+  font-weight:0!important;
+  border-radius: 0px 0px 15px 15px!important;
 }
 /* Footer */
 
 .footer {
     margin:auto;
-    width:80%!important;
+    width: 1079px!important;
     align-items:center!important;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
@@ -397,7 +415,7 @@ body {
 .site-footer {
     color:white!important;
     margin:auto;
-    width:80%!important;
+    width: 1079px!important;
     align-items:center!important;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
