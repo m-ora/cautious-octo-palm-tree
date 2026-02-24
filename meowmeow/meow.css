@@ -403,6 +403,18 @@ body {
 }
 
 
+.profile-page.profile-custom-css .container .profile-right .card:nth-child(1) .card-body {
+  filter: invert(30%) sepia(100%) hue-rotate(190deg) contrast(202%);
+      transition: 0.5s ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.profile-page.profile-custom-css .container .profile-right .card:nth-child(1) .card-body:hover {
+  filter: invert(30%) sepia(100%) hue-rotate(190deg) contrast(202%);
+    transition: 0.5s ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+
 /* Override the inline background on the Lexical editor wrapper thx ᵂᶤʳᵉᵈ */
 .profile-page.profile-custom-css #comments .add-comment .card-body > div > div,
 .profile-page.profile-custom-css #comments .add-comment > div > div {
