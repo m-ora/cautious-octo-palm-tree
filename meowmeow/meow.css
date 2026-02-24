@@ -1,3 +1,272 @@
+
+:root {
+  color: 3f3f3f !important --vs-text-medium:3f3f3f !important
+}
+
+.card {
+  font-family: "Roboto";
+}
+
+
+.profile-left .card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  -webkit-backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 12px 6px rgba(255, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+
+}
+
+.profile-left .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.profile-left .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3));
+}
+
+
+.profile-right .card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  -webkit-backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 1px rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.profile-right .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.profile-right .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3));
+}
+
+.profile-breadcrumb {
+  color: #3f3f3f !important;
+}
+
+.profile-breadcrumb a {
+  color: #8182bc !important;
+  font-style: bold !important;
+}
+
+.profile-top-bar {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  -webkit-backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 1px rgba(255, 255, 255, 1);
+  position: relative;
+
+}
+
+.profile-top-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+}
+
+.profile-top-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3));
+}
+
+
+.card-body a, img{
+  border-radius: 5px;
+  border-color:#3f3f3f !important;
+  background: #ffffff75!important;
+  color: #3f3f3f !important;
+}
+
+.card-header {
+  background: none !important;
+  color: #3f3f3f !important;
+}
+
+
+.card-header::before {
+    background: linear-gradient(180deg, #8182bc, #8192bc);
+    border-radius: 100px;
+}
+
+.container {
+  color: #3f3f3f !important;
+}
+
+.add-comment {
+  background: none !important;
+  border-radius: 20px !important;
+}
+
+.rplt-node-27 a {
+  color: #3f3f3f !important;
+}
+
+
+.profile-avatar {
+  border: 2px solid #8182bc;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+  filter: drop-shadow(0 0 0.05rem black);
+  transition-timing-function: ease-in-out;
+}
+
+.profile-avatar:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 0.05rem black);
+  transition-timing-function: ease-in-out;
+}
+
+.profile-display-name {
+  color: #8182bc;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  font-style: bold !important;
+  font-size: 30px;
+}
+
+.profile-username {
+  color: #3f3f3f;
+  font-weight: 900 !important;
+  font-style: bold !important;
+}
+
+.profile-tagline {
+  color: #3f3f3f;
+  font-weight: 900 !important;
+
+}
+
+.profile-url-box { border-radius: 20px!important; background: #ffffff75!important; border: 1px solid #ffffff}
+
+.profile-url-box code{color: #3f3f3f;}
+
+.profile-online-status, .profile-offline-status {
+  font-weight: 900 !important;
+  text-transform: lowercase;
+}
+.comment-avatar a, .user-avatar comment-avatar{background:none!important;}
+.comment-author-name a {background:none!important;}
+.comment-actions a{background:none!important;}
+
+.comment-time {color: #3f3f3f;}
+
+
+.add-comment{border-bottom:none!important;}
+
+.profile-comment{background:none!important;}
+
+.profile-online-status:after{content:'🟢';}
+
+.profile-offline-status:after{content:'🔴';}
+
+
+.action-btn.primary {
+  background: linear-gradient(135deg, var(--vs-blue-dark)0%, var(--vs-blue)100%) !important;
+  border-color: var(--vs-blue-dark) !important;
+  border-radius: 20px;
+}
+
+.action-btn.primary:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 0.15rem black);
+}
+
+img.friend-avatar {
+  width: var(--friend-avatar-size);
+  height: var(--friend-avatar-size);
+  object-fit: cover;
+
+  clip-path: polygon(
+    50% 90%,
+    10% 55%,
+    5% 35%,
+    20% 20%,
+    35% 20%,
+    50% 35%,
+    65% 20%,
+    80% 20%,
+    95% 35%,
+    90% 55%
+  );
+
+  border: 1px solid var(--vs-border-lighter);
+  transition: transform .3s ease, filter .3s ease;
+}
+
 /* "New!" tags */
 .header-nav .new-tag,
 .new-tag {
@@ -130,4 +399,5 @@ body {
     inset 0 0 20px 1px rgba(255, 255, 255, 1);
     position: relative;
 }
+
 
