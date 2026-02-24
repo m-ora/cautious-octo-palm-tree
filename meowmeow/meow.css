@@ -1,11 +1,47 @@
 
-:root {
-  color: 3f3f3f !important --vs-text-medium:3f3f3f !important
+a {
+  color:#3f3f3f !important; 
+  font-family: "Roboto";
+  text-transform: lowercase;
+  text-decoration:none;
 }
 
 .card {
   font-family: "Roboto";
 }
+.iframe {background:none;}
+
+.logo{
+    text-transform:capitalize;
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+    transition-timing-function: ease-in-out;
+    color:#5b7ce4!important;
+    text-shadow: 0.05em 0 #ffffff, 
+        0 0.05em #ffffff, 
+        -0.05em 0 #ffffff, 
+        0 -0.05em #ffffff, 
+        -0.05em -0.05em #ffffff, 
+        -0.05em 0.05em #ffffff, 
+        0.05em -0.05em #ffffff, 
+        0.05em 0.05em #ffffff;
+}
+.logo:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+    color:#5b7ce4;
+    text-shadow: 0.05em 0 #ffffff, 
+        0 0.05em #ffffff, 
+        -0.05em 0 #ffffff, 
+        0 -0.05em #ffffff, 
+        -0.05em -0.05em #ffffff, 
+        -0.05em 0.05em #ffffff, 
+        0.05em -0.05em #ffffff, 
+        0.05em 0.05em #ffffff;
+    
+}
+
 
 
 .profile-left .card {
@@ -141,18 +177,15 @@
       rgba(255, 255, 255, 0.3));
 }
 
-
 .card-body a, img{
-  border-radius: 4px;
-  border-color:#3f3f3f !important;
-  color: #3f3f3f !important;
+  border-radius: 5px;
 }
 
 .card-header {
   background: none !important;
   color: #3f3f3f !important;
+  text-transform: lowercase;
 }
-
 
 .card-header::before {
     background: linear-gradient(180deg, #8182bc, #8192bc);
@@ -161,6 +194,9 @@
 
 .container {
   color: #3f3f3f !important;
+  width: 1097px!important;
+  max-width: 1097px!important;
+
 }
 
 .add-comment {
@@ -178,14 +214,14 @@
   border-radius: 10px;
   transition: 0.5s ease-in-out;
   transform: scale(1);
-  filter: drop-shadow(0 0 0.05rem black);
+  filter: drop-shadow(0 0 0.05rem #8182bc);
   transition-timing-function: ease-in-out;
 }
 
 .profile-avatar:hover {
   transition: 0.5s ease-in-out;
   transform: scale(1.15);
-  filter: drop-shadow(0 0 0.05rem black);
+  filter: drop-shadow(0 0 0.05rem #8182bc);
   transition-timing-function: ease-in-out;
 }
 
@@ -277,35 +313,6 @@ img.friend-avatar {
   border-radius:15px;
 }
 
-.logo{
-    transition: 0.5s ease-in-out;
-    transform: scale(1);
-    transition-timing-function: ease-in-out;
-    color:#5b7ce4;
-    text-shadow: 0.05em 0 #ffffff, 
-        0 0.05em #ffffff, 
-        -0.05em 0 #ffffff, 
-        0 -0.05em #ffffff, 
-        -0.05em -0.05em #ffffff, 
-        -0.05em 0.05em #ffffff, 
-        0.05em -0.05em #ffffff, 
-        0.05em 0.05em #ffffff;
-}
-.logo:hover{
-    transition: 0.5s ease-in-out;
-    transform: scale(1.2);
-    transition-timing-function: ease-in-out;
-    color:#5b7ce4;
-    text-shadow: 0.05em 0 #ffffff, 
-        0 0.05em #ffffff, 
-        -0.05em 0 #ffffff, 
-        0 -0.05em #ffffff, 
-        -0.05em -0.05em #ffffff, 
-        -0.05em 0.05em #ffffff, 
-        0.05em -0.05em #ffffff, 
-        0.05em 0.05em #ffffff;
-    
-}
 
 body {
     background-image:url(https://myoshi.jinxxy-cdn.com/backgrounds/user_01kj2tr3z7e8k9850qt0j2gm1c/659e540a-6c8b-462f-9da6-eeb583446cad.gif);background-size: cover;background-position:center top;background-attachment:fixed;background-repeat:no-repeat;
@@ -340,7 +347,7 @@ body {
 .header {
     color:#3f3f3f!important;
     margin:auto;
-    width:80%!important;
+    width: 1079px!important;
     align-items:center!important;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: url("#liquidglass") blur(5.7px) brightness(1.1) saturate(1);
@@ -362,7 +369,6 @@ body {
     box-shadow: inset 0 0 1px 1px rgb(129 137 188 / 0%);
 }
 /* Footer */
-.site-footer {margin-top: 0!important;}
 
 .footer {
     margin:auto;
@@ -381,8 +387,15 @@ body {
     position: relative;
 }
 
-
+.site-footer a {
+  color:#5b7ce4;
+  text-decoration:none;
+  font-size:15px;
+  font-weight: 900 !important;
+  text-transform: lowercase;
+}
 .site-footer {
+    color:white!important;
     margin:auto;
     width:80%!important;
     align-items:center!important;
@@ -398,7 +411,5 @@ body {
     inset 0 0 20px 1px rgba(255, 255, 255, 1);
     position: relative;
 }
-
-
 
 
