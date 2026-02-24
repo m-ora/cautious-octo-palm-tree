@@ -400,6 +400,13 @@ body {
   bottom:2px;
 }
 
+.profile-page.profile-custom-css .container .profile-left .card:nth-child(4) div:nth-child(1) > a:nth-child(n+1) > div:nth-child(1) {
+  border-radius: 15px 15px 0px 0px !important;
+}
+.profile-page.profile-custom-css .container .profile-left .card:nth-child(4) div:nth-child(1) > a:nth-child(n+1)  {
+  border-radius: 15px 15px 0px 0px !important;
+}
+
 
 /* Override the inline background on the Lexical editor wrapper thx ᵂᶤʳᵉᵈ */
 .profile-page.profile-custom-css #comments .add-comment .card-body > div > div,
