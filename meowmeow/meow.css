@@ -387,6 +387,57 @@ body {
   border-radius: 0px 0px 15px 15px!important;
 }
 /* Footer */
+.card-header.starred:before{
+  content:'💗'!important;
+  background:none;
+  filter: drop-shadow(0 0 0.75rem #000000);
+  bottom:2px;
+}
+.card-header.hearted:before{
+  content:'💙'!important;
+  background:none;
+  filter: drop-shadow(0 0 0.75rem #000000);
+  bottom:2px;
+}
+
+
+/* Override the inline background on the Lexical editor wrapper thx ᵂᶤʳᵉᵈ */
+.profile-page.profile-custom-css #comments .add-comment .card-body > div > div,
+.profile-page.profile-custom-css #comments .add-comment > div > div {
+  
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 20px;
+    box-shadow:
+    0 0px 5px rgb(0 0 0 / 30%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 1px rgba(255, 255, 255, 1);
+}
+.profile-page.profile-custom-css #comments .add-comment button,
+.profile-page.profile-custom-css #comments .add-comment .action-btn {
+  padding: 4px 16px;
+}
+.profile-page.profile-custom-css #comments .add-comment button:hover,
+.profile-page.profile-custom-css #comments .add-comment .action-btn:hover {
+  transform: translateY(-1px);
+}
+
+.textbox{
+  border-radius:10px;
+}
+
+.site-footer:before{
+  content:'💙'!important;
+  background:none;
+}
+
+.copyright{
+  color:#3f3f3f;
+}
+
+.header-nav-label{
+  color:#3f3f3f;
+}
 
 .footer {
     margin:auto;
@@ -429,5 +480,4 @@ body {
     inset 0 0 20px 1px rgba(255, 255, 255, 1);
     position: relative;
 }
-
 
